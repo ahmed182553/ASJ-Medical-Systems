@@ -9,6 +9,7 @@ export default function Div1section2() {
         </div>
         <div className="w-[55%] p-3 text-6xl font-bold">
           <h1>High Quality Test Services</h1>
+          <h1>jbfdksjkfhskgsfb</h1>
         </div>
       </div>
     </>
