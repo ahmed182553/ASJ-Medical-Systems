@@ -6,7 +6,7 @@ export default function TopBar() {
     <div className="w-full h-[15%] flex justify-center">
       <div className="w-[99%] lg:w-[90%] h-[99%] flex justify-between items-center">
 
-        {/* LOGO */}
+
         <div className="w-auto h-auto flex">
           <img
             src={image2}
@@ -19,10 +19,10 @@ export default function TopBar() {
           />
         </div>
 
-        {/* RIGHT SIDE */}
+
         <div className="flex items-center gap-2">
 
-          {/* CALL ICON */}
+
           <div
             className="
               w-10 h-10 sm:w-[50px] sm:h-[50px]
@@ -33,7 +33,7 @@ export default function TopBar() {
             <IoCall color="white" size={24} className="sm:size-7" />
           </div>
 
-          {/* PHONE NUMBER */}
+
           <a
             href="tel:+201208261096"
             className="
@@ -45,7 +45,6 @@ export default function TopBar() {
             +20-120-8261-096
           </a>
 
-          {/* BUTTON */}
           <button
             className="
               bg-blue-600 text-white 

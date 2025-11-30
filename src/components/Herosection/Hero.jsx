@@ -11,12 +11,12 @@ export default function Hero() {
     >
       <div className="h-auto w-auto text-white flex flex-col gap-6 items-center leading-loose justify-center text-center">
 
-        {/* BADGE */}
+
         <div className="rounded-full w-[250px] md:w-[285px] h-auto bg-white text-black flex p-1 justify-center text-[11px] md:text-[13px] font-medium">
           X-RAY SYSTEMS FOR MEDICAL EXCELLENCE
         </div>
 
-        {/* HEADLINES */}
+
         <span className="text-3xl md:text-6xl font-bold block">
           Empowering Healthcare with Advanced
         </span>
@@ -25,7 +25,7 @@ export default function Hero() {
           X-Ray Imaging Technology
         </span>
 
-        {/* BUTTONS */}
+
         <div className="flex flex-col md:flex-row gap-3 mt-2 w-full justify-center items-center">
           <motion.button
             initial={{ opacity: 0, y: 40 }}
