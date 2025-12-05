@@ -8,8 +8,6 @@ export default function Navbar() {
   return (
     <div className="w-full h-[20%] flex justify-center">
       <div className="w-[93%] h-[50%] flex items-center justify-between">
-
-        {/* LEFT MENU - Desktop only */}
         <motion.nav
           initial={{ opacity: 0, x: -70 }}
           animate={{ opacity: 1, x: 0 }}
@@ -35,7 +33,6 @@ export default function Navbar() {
                   {item}
                 </div>
 
-                {/* Dropdown */}
                 <div
                   className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-xl py-3 z-50 
                   opacity-0 invisible transition-all duration-300 
@@ -53,12 +50,9 @@ export default function Navbar() {
           )}
         </motion.nav>
 
-        {/* MOBILE MENU ICON */}
         <div className="md:hidden flex">
           <CiGrid41 size={32} color="white" className="cursor-pointer hover:scale-110 transition" />
         </div>
-
-        {/* SOCIAL ICONS */}
         <motion.div
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
@@ -73,8 +67,6 @@ export default function Navbar() {
 
           <FaWhatsapp size={24} className="sm:size-7 text-white hover:scale-105 hover:text-blue-600 cursor-pointer" />
           <div className="w-px h-8 bg-white/20 hidden sm:block"></div>
-
-          {/* Desktop shows grid icon separately */}
           <CiGrid41 
             size={28} 
             className="text-white hover:scale-105 hover:text-blue-600 cursor-pointer hidden md:block" 
