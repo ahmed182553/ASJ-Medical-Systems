@@ -8,7 +8,6 @@ export default function Div1section3() {
     <>
       <div className="min-h-[580px] w-full flex justify-center">
         <div className="h-auto w-[90%] flex flex-col md:flex-row justify-between items-center gap-10 md:gap-0">
-          {/* LEFT SIDE (IMAGE) */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -21,7 +20,6 @@ export default function Div1section3() {
             </div>
           </motion.div>
 
-          {/* RIGHT SIDE (TEXT) */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
