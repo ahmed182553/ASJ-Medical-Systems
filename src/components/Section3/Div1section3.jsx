@@ -28,13 +28,13 @@ export default function Div1section3() {
             <div className="w-full md:w-[90%] h-auto flex flex-col justify-between space-y-5">
               <h1 className="text-3xl font-bold text-blue-800">Our Vision</h1>
 
-              <p className="leading-[1.7] font-bold text-blue-800">
+              <p className="leading-[1.7] text-gray-700 opacity-70">
                 To be the most trusted partner for hospitals and clinics by
                 providing dependable X-ray machines, premium spare parts, and
                 unmatched technical support.
               </p>
 
-              <div className="space-y-3 text-gray-700 leading-[1.6]">
+              <div className="space-y-3 text-gray-700 leading-[1.6] opacity-70">
                 {[
                   "Advanced X-Ray Imaging Solutions",
                   "Innovation & Expertise in Medical Imaging",
@@ -54,14 +54,14 @@ export default function Div1section3() {
                   </motion.div>
                 ))}
 
+              </div>
                 <motion.button
                   whileHover={{ scale: 1.07 }}
                   whileTap={{ scale: 0.96 }}
-                  className="mt-2.5 px-8 py-2 bg-[#222] text-white font-semibold rounded-full tracking-wide hover:bg-blue-700 transition duration-300 cursor-pointer"
+                  className="w-[30%] h-[15%] mt-2.5 px-8 py-2 bg-[#222] text-white font-semibold rounded-full tracking-wide hover:bg-blue-700 transition duration-300 cursor-pointer"
                 >
                   ABOUT US
                 </motion.button>
-              </div>
             </div>
           </motion.div>
         </div>
