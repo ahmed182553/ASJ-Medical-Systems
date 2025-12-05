@@ -1,8 +1,6 @@
 import image9 from "./image9.jpg";
 import { CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
-import image10 from "./image10.png";
-
 export default function Div1section3() {
   return (
     <>
