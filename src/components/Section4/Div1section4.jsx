@@ -1,43 +1,43 @@
-import image9 from "./image9.jpg";
+import image10 from "./image10.jpg";
 import { CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Div1section3() {
   return (
     <>
-      <div className="min-h-[580px] w-full flex justify-center py-10">
-        <div className="h-auto w-[90%] flex flex-col md:flex-row justify-between items-center gap-12">
+      <div className="min-h-[580px] w-full flex justify-center">
+        <div className="h-auto w-[90%] flex flex-col md:flex-row-reverse justify-between items-center gap-10 md:gap-0">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
             viewport={{ once: true }}
             className="md:h-[90%] md:w-[50%] w-full flex justify-center items-center"
           >
-            <div className="w-full md:w-[90%] h-[260px] md:h-full rounded-xl overflow-hidden shadow-lg border border-blue-700">
-              <img src={image9} className="w-full h-full object-cover" />
+            <div className="w-full md:w-[90%] h-[250px] md:h-full border border-blue-700 rounded-xl overflow-hidden shadow-md">
+              <img src={image10} className="w-full h-full object-cover" />
             </div>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.15 }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
             viewport={{ once: true }}
             className="md:h-[90%] md:w-[50%] w-full flex items-center"
           >
-            <div className="w-full md:w-[90%] flex flex-col space-y-6">
+            <div className="w-full md:w-[90%] h-auto flex flex-col justify-between space-y-5">
               <h1 className="text-3xl md:text-4xl font-bold text-blue-800">
-                Our Vision
+                Our Mission
               </h1>
 
-              <p className="leading-[1.8] text-gray-700 opacity-80 text-lg">
-                To be the most trusted partner for hospitals and clinics by
-                providing dependable X-ray machines, premium spare parts, and
-                unmatched technical support.
+              <p className="space-y-4 leading-[1.7] text-gray-700 opacity-80 text-lg">
+                Our mission is to support hospitals and clinics with dependable
+                X-ray equipment, premium spare parts, and expert service that
+                keeps their imaging systems running at peak performance.
               </p>
 
-              <div className="space-y-4 text-gray-700 opacity-80 leading-[1.7] text-lg">
+              <div className="space-y-3 text-gray-700 leading-[1.6] opacity-80">
                 {[
                   "Advanced X-Ray Imaging Solutions",
                   "Innovation & Expertise in Medical Imaging",
@@ -46,9 +46,9 @@ export default function Div1section3() {
                 ].map((item, index) => (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, x: 25 }}
+                    initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.45, delay: index * 0.15 }}
+                    transition={{ duration: 0.4, delay: index * 0.15 }}
                     viewport={{ once: true }}
                     className="flex items-start gap-3"
                   >
