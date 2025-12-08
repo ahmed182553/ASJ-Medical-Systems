@@ -1,8 +1,10 @@
 import image10 from "./image10.jpg";
 import { CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function Div1section3() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="min-h-[580px] w-full flex justify-center">
@@ -59,9 +61,10 @@ export default function Div1section3() {
               </div>
 
               <motion.button
+                onClick={() => navigate("/about")}
                 whileHover={{ scale: 1.06 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-[45%] md:w-[35%] px-8 py-3 mt-2 bg-blue-800 text-white font-medium rounded-full tracking-wide 
+                className="cursor-pointer w-[45%] md:w-[35%] px-8 py-3 mt-2 bg-blue-800 text-white font-medium rounded-full tracking-wide 
                            hover:bg-blue-700 transition duration-300 shadow-md"
               >
                 ABOUT US
