@@ -1,6 +1,9 @@
 import { motion } from "motion/react";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
+
+  const navigate = useNavigate();
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -28,6 +31,7 @@ export default function Hero() {
 
         <div className="flex flex-col md:flex-row gap-3 mt-2 w-full justify-center items-center">
           <motion.button
+          onClick={() => navigate("/about")}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
@@ -37,6 +41,7 @@ export default function Hero() {
           </motion.button>
 
           <motion.button
+            onClick={() => navigate("/contact")}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
