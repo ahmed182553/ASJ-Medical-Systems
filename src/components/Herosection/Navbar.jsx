@@ -5,6 +5,13 @@ import { CiGrid41 } from "react-icons/ci";
 import { motion } from "motion/react";
 
 export default function Navbar() {
+  const menuData = {
+    "QUICK LINKS": ["Home", "About Us", "Our Vision", "Contact"],
+    "SERVICES": ["Customer Support", "Repair Service", "Maintenance", "Installation"],
+    "SYSTEMS": ["MRI", "CT Scanner", "Ultra Sound", "X-Ray", "General Medical Equipment"],
+    "PARTS": ["X-Ray Tubes", "Generators", "Control Panels", "Cables", "Detectors"],
+    "CONTACT": ["Email Us", "Call Us", "Locations", "Support Form"],
+  };
   return (
     <div className="w-full h-[20%] flex justify-center">
       <div className="w-[93%] h-[50%] flex items-center justify-between">
@@ -23,31 +30,32 @@ export default function Navbar() {
             tracking-wide
           "
         >
-          {["QUICK LINKS", "SERVICES", "SYSTEMS", "PARTS", "CONTACT"].map(
-            (item) => (
-              <div key={item} className="relative group inline-block">
-                <div
-                  className="px-4 py-2 cursor-pointer transition-all duration-300 rounded-md 
-                  text-white group-hover:bg-white group-hover:text-blue-600 group-hover:scale-105"
-                >
-                  {item}
-                </div>
-
-                <div
-                  className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-xl py-3 z-50 
-                  opacity-0 invisible transition-all duration-300 
-                  group-hover:opacity-100 group-hover:visible"
-                >
-                  <ul className="flex flex-col gap-3 text-gray-800 font-semibold">
-                    <li className="px-4 py-1 border-b border-gray-200 hover:text-black cursor-pointer">SONOGRAM</li>
-                    <li className="px-4 py-1 border-b border-gray-200 hover:text-black cursor-pointer">3D/4D USG</li>
-                    <li className="px-4 py-1 border-b border-gray-200 hover:text-black cursor-pointer">3T MRI SCANS</li>
-                    <li className="px-4 py-1 hover:text-black cursor-pointer">X-RAY</li>
-                  </ul>
-                </div>
+          {Object.keys(menuData).map((item) => (
+            <div key={item} className="relative group inline-block">
+              <div
+                className="px-4 py-2 cursor-pointer transition-all duration-300 rounded-md 
+            text-white group-hover:bg-white group-hover:text-blue-600 group-hover:scale-105"
+              >
+                {item}
               </div>
-            )
-          )}
+              <div
+                className="absolute left-0 mt-2 w-52 bg-white shadow-lg rounded-xl py-3 z-50
+            opacity-0 invisible transition-all duration-300 
+            group-hover:opacity-100 group-hover:visible"
+              >
+                <ul className="flex flex-col gap-3 text-gray-800 font-semibold">
+                  {menuData[item].map((subItem, index) => (
+                    <li
+                      key={index}
+                      className="px-4 py-1 border-b border-gray-200 last:border-none hover:text-black cursor-pointer"
+                    >
+                      {subItem}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
         </motion.nav>
 
         <div className="md:hidden flex">
@@ -67,9 +75,9 @@ export default function Navbar() {
 
           <FaWhatsapp size={24} className="sm:size-7 text-white hover:scale-105 hover:text-blue-600 cursor-pointer" />
           <div className="w-px h-8 bg-white/20 hidden sm:block"></div>
-          <CiGrid41 
-            size={28} 
-            className="text-white hover:scale-105 hover:text-blue-600 cursor-pointer hidden md:block" 
+          <CiGrid41
+            size={28}
+            className="text-white hover:scale-105 hover:text-blue-600 cursor-pointer hidden md:block"
           />
         </motion.div>
       </div>

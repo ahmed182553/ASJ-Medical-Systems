@@ -1,1 +1,18 @@
 @import "tailwindcss";
+.fade-swiper {
+  --fade-width: 90px; 
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black var(--fade-width),
+    black calc(100% - var(--fade-width)),
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black var(--fade-width),
+    black calc(100% - var(--fade-width)),
+    transparent
+  );
+}

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
 import image2 from "../Section2/image2.png";
 
-export default function Footertop({}) {
+export default function Footertop() {
 
     const navigate = useNavigate();
 
