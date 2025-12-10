@@ -1,11 +1,14 @@
 import image8 from "./image8.webp";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 export default function Div1section2() {
+  const navigate = useNavigate();
   return (
     <>
       <motion.div
+      onClick={() => navigate("/products")}
         initial={{ opacity: 0, x: 60 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -39,7 +42,8 @@ export default function Div1section2() {
           </h2>
         </div>
         <button
-          className="
+          onClick={() => navigate("/contact")}
+          className="cursor-pointer
             absolute bottom-4 right-4 bg-white shadow-md w-12 h-12 
             rounded-full flex items-center justify-center
             transition-all duration-300 

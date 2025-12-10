@@ -31,11 +31,11 @@ export default function Hero() {
 
         <div className="flex flex-col md:flex-row gap-3 mt-2 w-full justify-center items-center">
           <motion.button
-          onClick={() => navigate("/about")}
+            onClick={() => navigate("/about")}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="rounded-full bg-blue-600 p-2 w-48 md:w-40 text-white hover:bg-white hover:text-black transition-all duration-500 hover:scale-105 uppercase font-medium"
+            className="rounded-full cursor-pointer bg-blue-600 p-2 w-48 md:w-40 text-white hover:bg-white hover:text-black transition-all duration-500 hover:scale-105 uppercase font-medium"
           >
             more about
           </motion.button>
@@ -45,7 +45,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="rounded-full bg-white p-2 w-48 md:w-40 text-black hover:bg-blue-600 hover:text-white transition-all duration-500 hover:scale-105 uppercase font-medium"
+            className=" cursor-pointer rounded-full bg-white p-2 w-48 md:w-40 text-black hover:bg-blue-600 hover:text-white transition-all duration-500 hover:scale-105 uppercase font-medium"
           >
             contact us
           </motion.button>

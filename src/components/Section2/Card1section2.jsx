@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import image5 from "./image5.jpg";
 
 export default function Card() {
+  const navigate = useNavigate();
   return (
     <motion.div
+    onClick={() => navigate("/products")}
       initial={{ opacity: 0, x: -60 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, amount: 0.3 }}
@@ -43,7 +46,8 @@ export default function Card() {
       </div>
 
       <button
-        className="
+        onClick={() => navigate("/products")}
+        className="cursor-pointer
           absolute bottom-3 right-3 
           bg-white shadow-md 
           w-11 h-11 sm:w-12 sm:h-12 

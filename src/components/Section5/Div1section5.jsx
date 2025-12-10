@@ -1,7 +1,9 @@
 import image11 from "./image11.png";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function DivSectionExample() {
+  const navigate = useNavigate();
   return (
     <div className="w-full flex justify-center py-10">
       <motion.div
@@ -50,6 +52,7 @@ export default function DivSectionExample() {
             Services and Systems & Parts
           </motion.h1>
           <motion.button
+            onClick={() => navigate("/contact")}
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.9 }}
             className="sm:px-6 sm:py-2 sm:text-sm bg-white text-blue-800 px-8 py-3 rounded-full font-semibold shadow  hover:bg-blue-500 transition duration-300 hover:text-white cursor-pointer

@@ -33,9 +33,15 @@ export default function Footertop() {
 
                 <div className="flex items-center gap-3 mb-4 max-md:justify-center">
                     <FaMapMarkerAlt className="text-blue-500 text-xl" />
-                    <span className="cursor-pointer hover:text-blue-600">
-                        5th Street, New York, USA
-                    </span>
+                    <a
+                        href="https://www.google.com/maps?q=kingdom+of+saudi,+jeddah+ALsafa+district,+prince+saud+al+faisal+street"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cursor-pointer hover:text-blue-600"
+                    >
+                        kingdom of saudi, jeddah ALsafa district , prince saud al faisal street
+                    </a>
+
                 </div>
 
                 <div className="flex items-center gap-3 mb-4 max-md:justify-center">
@@ -70,7 +76,7 @@ export default function Footertop() {
                     </li>
 
                     <li className="hover:text-white cursor-pointer">Our Mission</li>
-                    <li className="hover:text-white cursor-pointer">Contact</li>
+                    <li onClick={() => navigate("/contact")} className="hover:text-white cursor-pointer">Contact</li>
                 </ul>
             </motion.div>
             <motion.div
@@ -80,11 +86,11 @@ export default function Footertop() {
             >
                 <h2 className="text-xl font-semibold mb-6">Services</h2>
                 <ul className="space-y-3 text-gray-400 max-md:space-y-2">
-                    <li className="hover:text-white cursor-pointer">X-Ray</li>
-                    <li className="hover:text-white cursor-pointer">Customer Service</li>
+                    <li onClick={() => navigate("/products")} className="hover:text-white cursor-pointer">X-Ray</li>
+                    <li onClick={() => navigate("/contact")} className="hover:text-white cursor-pointer">Customer Service</li>
                     <li className="hover:text-white cursor-pointer">Parts</li>
-                    <li className="hover:text-white cursor-pointer">Repair</li>
-                    <li className="hover:text-white cursor-pointer">Technical Team</li>
+                    <li onClick={() => navigate("/contact")} className="hover:text-white cursor-pointer">Repair</li>
+                    <li onClick={() => navigate("/contact")} className="hover:text-white cursor-pointer">Technical Team</li>
                 </ul>
             </motion.div>
         </motion.div>

@@ -37,7 +37,7 @@ export default function Div1section2() {
       </div>
 
       <button
-        className="
+        className="cursor-pointer
           absolute bottom-4 right-4 bg-white shadow-md w-12 h-12 
           rounded-full flex items-center justify-center
           transition-all duration-300 
