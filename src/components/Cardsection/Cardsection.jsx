@@ -10,11 +10,7 @@ export default function Cardsection() {
 
     return (
         <div className="w-full py-16 flex flex-col items-center bg-linear-to-b from-gray-100 to-white relative">
-
-            {/* ------------------ Fade Left ------------------ */}
             <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-linear-to-r from-white via-white/80 to-transparent z-20"></div>
-
-            {/* ------------------ Fade Right ------------------ */}
             <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-linear-to-l from-white via-white/80 to-transparent z-20"></div>
 
             <motion.h1
@@ -52,19 +48,20 @@ export default function Cardsection() {
                         >
                             <div className="w-full h-64 flex items-center justify-center bg-white">
                                 <img
-                                    src={product.images[0]}
+                                    src={
+                                        product.images?.main ||
+                                        "/placeholder-image.png"
+                                    }
                                     className="max-h-full max-w-full object-contain"
                                     alt={product.name}
                                 />
                             </div>
-
-
                             <div className="p-6">
                                 <h2 className="text-[18px] font-semibold text-blue-700">
                                     {product.name}
                                 </h2>
                                 <p className="text-gray-600 mt-2 text-sm line-clamp-2">
-                                    {product.desc}
+                                    {product.desc || product.shortDescription}
                                 </p>
 
                                 <button
