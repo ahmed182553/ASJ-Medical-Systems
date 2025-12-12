@@ -1,6 +1,6 @@
 @import "tailwindcss";
 .fade-swiper {
-  --fade-width: 90px; 
+  --fade-width: 90px;
   mask-image: linear-gradient(
     to right,
     transparent,
@@ -16,3 +16,6 @@
     transparent
   );
 }
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";

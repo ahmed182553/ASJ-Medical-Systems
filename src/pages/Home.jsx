@@ -5,6 +5,7 @@ import Div1section3 from "../components/Section3/Div1section3.jsx";
 import Div1section4 from "../components/Section4/Div1section4.jsx";
 import Div1section5 from "../components/Section5/Div1section5.jsx";
 import Footer from "../components/Section6/Fotter.jsx";
+import SparePartsSlider from "../components/SparePartsSlider.jsx";
 
 export default function Home() {
   return (
@@ -14,9 +15,11 @@ export default function Home() {
       <Div1section3 />
       <Div1section4 />
       <Cardsection />
+      <SparePartsSlider />
       <Div1section5 />
       <Footer />
-      
+
+
     </>
   );
 }
