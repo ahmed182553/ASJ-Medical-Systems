@@ -2,6 +2,26 @@ import img1 from "../systemsimages/ge-hispeed-ct-scanner.jpg";
 import img2 from "../systemsimages/toshiba-aquilion-16ct.jpg";
 import img3 from "../systemsimages/HITACHI-APERTO-INSPIRE-0.4T.png";
 import img4 from "../systemsimages/philips_brilliance_16_03b896d6-9037-4230-9ab5-6956adba752c.webp";
+import img6 from "../systemsimages/4462009.jpg"
+import img7 from "../systemsimages/65e3073bf2a61_quipement-dentaire-portable-calcul-de-rayons-x-pic-mini-rayon.jpg__2__11zon-slider.jpg"
+import img8 from "../systemsimages/70354-11776538.webp"
+import img9 from "../systemsimages/analog-x-ray-machine-500x500.webp"
+import img10 from "../systemsimages/AQ-RXL-TSX-32-Slice-6.jpg"
+import img11 from "../systemsimages/bfb778_71f64c7eac7344969edde596263029e4mv2.jpg"
+import img12 from "../systemsimages/compact-mobile-c-arm-x-ray-system-phoenix-2001c7a8.webp"
+import img13 from "../systemsimages/download.jpg"
+import img14 from "../systemsimages/GE-HealthCare-HiSpeed-Dual-2-Vorschau.webp"
+import img15 from "../systemsimages/ge-healthcare-refurbished-prospeed-dual-slice-ct-scanner.jpg"
+import img16 from "../systemsimages/ge-hispeed-ct-e-single-and-dual-slice-ct-scan-1492525552-2877378.jpg"
+import img17 from "../systemsimages/HITACHI-APERTO-INSPIRE-0.4T.png"
+import img18 from "../systemsimages/images.jpg"
+import img19 from "../systemsimages/oec-carm-1.webp"
+import img20 from "../systemsimages/philips-brilliance-16-slice-ct-scanner.jpg"
+import img21 from "../systemsimages/philips-brilliance-big-bore-16-slice-.jpg"
+import img22 from "../systemsimages/Philips-Brilliance-Big-Bore-16-Slice-CT-Scanners.webp"
+import img23 from "../systemsimages/Philips-Ingenuity-128-Slice-CT-Scanners.jpg"
+import img24 from "../systemsimages/philips-ingenuity-128-slice-ct.jpg"
+import img25 from "../systemsimages/4462009.jpg"
 
 const products = [
     {
@@ -11,7 +31,7 @@ const products = [
         price: "$",
         images: {
             main: img1,
-            gallery: [img3, img4, img4, img1]
+            gallery: [img14, img15, img16]
         },
         shortDescription: "Reliable X-Ray system for general radiography.",
         description:
@@ -30,33 +50,6 @@ const products = [
         available: true,
         brand: "ASJ Medical"
     },
-
-    {
-        id: "Aquilion-16",
-        name: "CT Toshiba Aquilion 16 Slice",
-        category: "CT Scanner",
-        price: "$",
-        images: {
-            main: img2,
-            gallery: [img3, img3, img3, img3, img3]
-        },
-        shortDescription: "Multi-slice CT for advanced diagnostics.",
-        description:
-            "CT Vision 200 offers fast acquisition, thin-slice reconstruction and advanced post-processing tools for precise diagnostics in radiology departments.",
-        features: [
-            "16-slice imaging",
-            "Low-dose protocols",
-            "Advanced reconstruction"
-        ],
-        specs: [
-            { label: "Slices", value: "16" },
-            { label: "Gantry aperture", value: "78 cm" },
-            { label: "Rotation time", value: "0.5 s" }
-        ],
-        available: true,
-        brand: "ASJ Medical"
-    },
-
     {
         id: "mri-hitachi",
         name: "MRI Hitachi Aperto Inspire 0.4T",
@@ -64,7 +57,7 @@ const products = [
         price: "$",
         images: {
             main: img3,
-            gallery: [img3, img3, img3, img3, img3]
+            gallery: [img11, img13]
         },
         shortDescription: "Open MRI system with comfortable design.",
         description:
@@ -85,7 +78,7 @@ const products = [
         price: "$",
         images: {
             main: img4,
-            gallery: [img3, img3, img3, img3, img3]
+            gallery: [img20, img21, img22]
         },
         shortDescription: "Portable ultrasound with Doppler modes.",
         description:
@@ -127,7 +120,7 @@ const products = [
         ],
         images: {
             main: img2,
-            gallery: [img3, img3, img3, img3]
+            gallery: [img25]
         }
     },
 
@@ -159,7 +152,7 @@ const products = [
         ],
         images: {
             main: img1,
-            gallery: [img4, img4, img2, img2]
+            gallery: [img18, img23]
         }
     },
 
@@ -191,7 +184,7 @@ const products = [
         ],
         images: {
             main: img2,
-            gallery: [img2, img3, img2, img1]
+            gallery: [img24]
         }
     },
 
@@ -223,7 +216,7 @@ const products = [
         ],
         images: {
             main: img2,
-            gallery: [img2, img3, img4]
+            gallery: [img6]
         }
     },
 
@@ -254,8 +247,8 @@ const products = [
             { label: "Weight Limit", value: "227 kg" }
         ],
         images: {
-            main: img2,
-            gallery: [img2, img3, img4]
+            main: img8,
+            gallery: [img10]
         }
     },
 
@@ -317,8 +310,8 @@ const products = [
         category: "X-Ray",
         price: "$",
         images: {
-            main: img1,
-            gallery: [img2, img1, img3]
+            main: img12,
+            gallery: [img19]
         },
         shortDescription:
             "Advanced C-Arm fluoroscopy unit for surgery and orthopedics.",
@@ -346,8 +339,8 @@ const products = [
         category: "X-Ray",
         price: "$",
         images: {
-            main: img4,
-            gallery: [img2, img3, img1, img4]
+            main: img9,
+            gallery: []
         },
         shortDescription:
             "Basic analog X-ray system for general radiography.",
@@ -370,8 +363,8 @@ const products = [
         category: "X-Ray",
         price: "$",
         images: {
-            main: img1,
-            gallery: [img3, img2, img1, img2]
+            main: img7,
+            gallery: [img7]
         },
         shortDescription:
             "Compact dental X-ray for clinics and dental centers.",
