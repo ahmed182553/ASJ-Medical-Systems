@@ -88,7 +88,7 @@ export default function Footertop() {
                 <ul className="space-y-3 text-gray-400 max-md:space-y-2">
                     <li onClick={() => navigate("/products")} className="hover:text-white cursor-pointer">X-Ray</li>
                     <li onClick={() => navigate("/contact")} className="hover:text-white cursor-pointer">Customer Service</li>
-                    <li className="hover:text-white cursor-pointer">Parts</li>
+                    <li onClick={() => navigate("/spareparts")} className="hover:text-white cursor-pointer">Parts</li>
                     <li onClick={() => navigate("/contact")} className="hover:text-white cursor-pointer">Repair</li>
                     <li onClick={() => navigate("/contact")} className="hover:text-white cursor-pointer">Technical Team</li>
                 </ul>

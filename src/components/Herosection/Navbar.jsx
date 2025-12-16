@@ -67,13 +67,30 @@ export default function Navbar() {
           transition={{ duration: 1 }}
           className="w-[35%] md:w-[30%] flex justify-between items-center"
         >
-          <RiFacebookCircleFill size={24} className="sm:size-7 text-white hover:scale-105 hover:text-blue-600 cursor-pointer" />
+          <a
+            href="https://www.facebook.com/profile.php?id=61585272027779"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <RiFacebookCircleFill
+              size={24}
+              className="sm:size-7 text-white hover:scale-105 hover:text-[#1877F2] cursor-pointer transition"
+            />
+          </a>
           <div className="w-[5px] h-[5px] rounded-full bg-gray-300 hidden sm:block"></div>
 
           <IoLogoInstagram size={24} className="sm:size-7 text-white hover:scale-105 hover:text-blue-600 cursor-pointer" />
           <div className="w-[5px] h-[5px] rounded-full bg-gray-300 hidden sm:block"></div>
-
-          <FaWhatsapp size={24} className="sm:size-7 text-white hover:scale-105 hover:text-blue-600 cursor-pointer" />
+          <a
+            href="https://wa.me/201095598066?text=Hello%20I%20want%20to%20contact%20your%20company"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp
+              size={24}
+              className="sm:size-7 text-white hover:scale-105 hover:text-blue-600 cursor-pointer transition"
+            />
+          </a>
           <div className="w-px h-8 bg-white/20 hidden sm:block"></div>
           <CiGrid41
             size={28}

@@ -1,6 +1,6 @@
 // FooterBottom.jsx
 import { motion } from "framer-motion";
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 export default function FooterBottom() {
     return (
@@ -13,7 +13,9 @@ export default function FooterBottom() {
         >
             <div className="flex items-center gap-4">
                 <a
-                    href="#"
+                    href="https://www.facebook.com/profile.php?id=61585272027779"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-11 h-11 flex items-center justify-center rounded-full bg-[#1a1f29] hover:bg-blue-600 transition"
                 >
                     <FaFacebookF className="text-white" />
@@ -27,10 +29,14 @@ export default function FooterBottom() {
                 </a>
 
                 <a
-                    href="#"
+                    href="https://wa.me/201095598066?text=Hello%20I%20want%20to%20contact%20your%20company"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-11 h-11 flex items-center justify-center rounded-full bg-[#1a1f29] hover:bg-blue-600 transition"
                 >
-                    <FaTwitter className="text-white" />
+                    <FaWhatsapp
+                        className="text-white"
+                    />
                 </a>
             </div>
             <p className="text-gray-500 text-center max-md:text-sm">

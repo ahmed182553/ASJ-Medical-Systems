@@ -1,8 +1,10 @@
 import image7 from "./image7.avif";
 import { motion } from "framer-motion";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router-dom";
 
 export default function Div1section2() {
+  const navigate = useNavigate()
   return (
     <motion.div
       initial={{ opacity: 0, x: 60 }}
@@ -37,6 +39,7 @@ export default function Div1section2() {
       </div>
 
       <button
+        onClick={() => navigate("/spareparts")}
         className="cursor-pointer
           absolute bottom-4 right-4 bg-white shadow-md w-12 h-12 
           rounded-full flex items-center justify-center
