@@ -22,8 +22,47 @@ import img22 from "../systemsimages/Philips-Brilliance-Big-Bore-16-Slice-CT-Scan
 import img23 from "../systemsimages/Philips-Ingenuity-128-Slice-CT-Scanners.jpg"
 import img24 from "../systemsimages/philips-ingenuity-128-slice-ct.jpg"
 import img25 from "../systemsimages/4462009.jpg"
+import img26 from "../systemsimages/WhatsApp Image 2025-12-14 at 9.19.41 PM (1).jpeg"
+import img27 from "../systemsimages/WhatsApp Image 2025-12-14 at 9.19.41 PM (2).jpeg"
+import img28 from "../systemsimages/WhatsApp Image 2025-12-14 at 9.19.41 PM.jpeg"
+import img29 from "../systemsimages/WhatsApp Image 2025-12-14 at 9.19.42 PM (1).jpeg"
+import img30 from "../systemsimages/WhatsApp Image 2025-12-14 at 9.19.42 PM.jpeg"
+
 
 const products = [
+    {
+        id: "CT Siemens Somatom Emotion Duo",
+        name: "CT Siemens Somatom Emotion Duo without tube",
+        category: "CT Scanner",
+        price: "$",
+        images: {
+            main: img28 ,
+            gallery: [img27, img26, img29, img30]
+        },
+        shortDescription: "A reliable dual-slice CT scanner from Siemens Without tube, providing fast imaging, clear image quality, and dose-efficient performance for daily clinical use.",
+        description: "Siemens SOMATOM Emotion Duo is a dual-slice CT scanner designed for fast, reliable, and high-quality diagnostic imaging. It combines excellent image quality with dose-efficient technology, making it ideal for routine clinical examinations in hospitals and medical centers. The system is easy to operate and supports a wide range of applications with consistent performance.",
+        features: ["Dual-slice CT technology for faster scanning",
+
+            "High image quality with optimized radiation dose",
+
+            "User- friendly interface and easy workflow",
+
+            "Reliable performance for routine diagnostic imaging",
+
+            "Suitable for head, chest, abdomen, and general CT examinations",
+
+            "Compact design, ideal for limited space environments"],
+        specs: [
+            { label: "Slices", value: "2-slice CT scanner" },
+            { label: "Detector System", value: "Solid-state detector technology" },
+            { label: "Gantry Aperture", value: "Approx. 70 cm" },
+            { label: "Rotation Time", value: "Fast rotation for reduced motion artifacts" },
+            { label: "Applications", value: "Head, body, trauma, and routine diagnostic scans" },
+            { label: "Dose Reduction", value: "Integrated dose-efficient imaging technology" }
+        ],
+        available: true,
+        brand: "ASJ Medical"
+    },
     {
         id: "ge-hispeed",
         name: "Ct Gehispeed Dual",

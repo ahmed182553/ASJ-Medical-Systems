@@ -1,4 +1,8 @@
+import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 export default function MainDetails({ product }) {
+    const navigate = useNavigate();
     return (
         <div>
             <h1 className="text-3xl font-bold mb-3">{product.name}</h1>
@@ -17,10 +21,10 @@ export default function MainDetails({ product }) {
                 ))}
             </ul>
             <div className="flex items-center gap-4 mt-6">
-                <button className="cursor-pointer px-6 py-2 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
+                <a href="https://wa.me/201095598066?text=Hello%20I%20want%20to%20contact%20your%20company" className="cursor-pointer px-6 py-2 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
                     Contact Sales
-                </button>
-                <button className="cursor-pointer px-6 py-2 rounded-full border border-gray-300 text-gray-800 font-medium bg-white hover:bg-gray-100 transition">
+                </a>
+                <button onClick={() => navigate("/contact")} className="cursor-pointer px-6 py-2 rounded-full border border-gray-300 text-gray-800 font-medium bg-white hover:bg-gray-100 transition">
                     Email Brochure
                 </button>
             </div>
