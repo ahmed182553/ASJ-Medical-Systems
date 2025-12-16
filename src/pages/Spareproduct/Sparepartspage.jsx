@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import sparePartsData from "../../data/Sparepartsdata";
 import { motion } from "framer-motion";
+import Footer from "../../components/Section6/Fotter";
 
 export default function Sparepartspage() {
-    return (
+    return (<>
         <div className="min-h-screen bg-slate-100 py-10 px-4">
             <h1 className="text-3xl font-bold text-center mb-10">Spare Parts</h1>
 
@@ -48,5 +49,6 @@ export default function Sparepartspage() {
                 ))}
             </div>
         </div>
+        <Footer /></>
     );
 }

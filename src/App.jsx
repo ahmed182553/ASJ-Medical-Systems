@@ -18,6 +18,23 @@ export default function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/spareparts" element={<Sparepartspage />} />
                 <Route path="/sparepart/:id" element={<Sparepartdetails />} />
+                <Route path="/services/support" element={<Contact />} />
+                <Route path="/services/repair" element={<Contact />} />
+                <Route path="/services/parts" element={<Sparepartspage />} />
+                <Route path="/services/technical" element={<Contact />} />
+                <Route path="/systems/mri" element={<Products />} />
+                <Route path="/systems/xray" element={<Products />} />
+                <Route path="/systems/ct" element={<Products />} />
+                <Route path="/systems/ultrasound" element={<Products />} />
+                <Route path="/contact/locations" element={<Contact />} />
+                <Route path="/contact/support" element={<Contact />} />
+                <Route path="/parts/xray-tubes" element={<Sparepartspage />} />
+                <Route path="/parts/generators" element={<Sparepartspage />} />
+                <Route path="/parts/cables" element={<Sparepartspage />} />
+                <Route path="/parts/control-panels" element={<Sparepartspage />} />
+                <Route path="/parts/detectors" element={<Sparepartspage />} />
+
+
 
             </Routes>
         </BrowserRouter>

@@ -3,15 +3,44 @@ import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { CiGrid41 } from "react-icons/ci";
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
+
 
 export default function Navbar() {
   const menuData = {
-    "QUICK LINKS": ["Home", "About Us", "Our Vision", "Contact"],
-    "SERVICES": ["Customer Support", "Repair Service", "Maintenance", "Installation"],
-    "SYSTEMS": ["MRI", "CT Scanner", "Ultra Sound", "X-Ray", "General Medical Equipment"],
-    "PARTS": ["X-Ray Tubes", "Generators", "Control Panels", "Cables", "Detectors"],
-    "CONTACT": ["Email Us", "Call Us", "Locations", "Support Form"],
+    "QUICK LINKS": [
+      { name: "Home", path: "/" },
+      { name: "About Us", path: "/about" },
+      { name: "Our Vision", path: "/vision" },
+      { name: "Contact", path: "/contact" },
+    ],
+    "SERVICES": [
+      { name: "Customer Support", path: "/services/support" },
+      { name: "Repair Service", path: "/services/repair" },
+      { name: "Technical", path: "/services/technical" },
+      { name: "Parts", path: "/services/parts" },
+    ],
+    "SYSTEMS": [
+      { name: "MRI", path: "/systems/mri" },
+      { name: "CT Scanner", path: "/systems/ct" },
+      { name: "Ultra Sound", path: "/systems/ultrasound" },
+      { name: "X-Ray", path: "/systems/xray" },
+    ],
+    "PARTS": [
+      { name: "X-Ray Tubes", path: "/parts/xray-tubes" },
+      { name: "Generators", path: "/parts/generators" },
+      { name: "Control Panels", path: "/parts/control-panels" },
+      { name: "Cables", path: "/parts/cables" },
+      { name: "Detectors", path: "/parts/detectors" },
+    ],
+    "CONTACT": [
+      { name: "Email Us", path: "/contact" },
+      { name: "Call Us", path: "/contact" },
+      { name: "Locations", path: "/contact" },
+      { name: "Support Form", path: "/contact" },
+    ],
   };
+
   return (
     <div className="w-full h-[20%] flex justify-center">
       <div className="w-[93%] h-[50%] flex items-center justify-between">
@@ -47,10 +76,24 @@ export default function Navbar() {
                   {menuData[item].map((subItem, index) => (
                     <li
                       key={index}
-                      className="px-4 py-1 border-b border-gray-200 last:border-none hover:text-black cursor-pointer"
+                      className="px-4 py-1 border-b border-gray-200 last:border-none"
                     >
-                      {subItem}
+                      <Link
+                        to={subItem.path}
+                        className="
+    block w-full 
+    px-2 py-1
+    rounded-md
+    hover:bg-blue-50 
+    hover:text-blue-600 
+    transition
+  "
+                      >
+                        {subItem.name}
+                      </Link>
+
                     </li>
+
                   ))}
                 </ul>
               </div>
