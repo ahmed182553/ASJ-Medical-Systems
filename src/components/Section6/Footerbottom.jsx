@@ -29,7 +29,7 @@ export default function FooterBottom() {
                 </a>
 
                 <a
-                    href="https://wa.me/201095598066?text=Hello%20I%20want%20to%20contact%20your%20company"
+                    href="https://wa.me/966510961728?text=Hello%20I%20want%20to%20contact%20your%20company"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-11 h-11 flex items-center justify-center rounded-full bg-[#1a1f29] hover:bg-blue-600 transition"

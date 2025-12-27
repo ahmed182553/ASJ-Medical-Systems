@@ -125,7 +125,7 @@ export default function Navbar() {
           <IoLogoInstagram size={24} className="sm:size-7 text-white hover:scale-105 hover:text-blue-600 cursor-pointer" />
           <div className="w-[5px] h-[5px] rounded-full bg-gray-300 hidden sm:block"></div>
           <a
-            href="https://wa.me/201095598066?text=Hello%20I%20want%20to%20contact%20your%20company"
+            href="https://wa.me/+966510961728?text=Hello%20I%20want%20to%20contact%20your%20company"
             target="_blank"
             rel="noopener noreferrer"
           >

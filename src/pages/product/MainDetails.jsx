@@ -21,7 +21,7 @@ export default function MainDetails({ product }) {
                 ))}
             </ul>
             <div className="flex items-center gap-4 mt-6">
-                <a href="https://wa.me/201095598066?text=Hello%20I%20want%20to%20contact%20your%20company" className="cursor-pointer px-6 py-2 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
+                <a href="https://wa.me/966510961728?text=Hello%20I%20want%20to%20contact%20your%20company" className="cursor-pointer px-6 py-2 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
                     Contact Sales
                 </a>
                 <button onClick={() => navigate("/contact")} className="cursor-pointer px-6 py-2 rounded-full border border-gray-300 text-gray-800 font-medium bg-white hover:bg-gray-100 transition">

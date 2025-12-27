@@ -35,14 +35,14 @@ export default function TopBar() {
 
 
           <a
-            href="tel:+201208261096"
+            href="tel:+966510961728"
             className="
               text-white 
               text-[14px] sm:text-[20px]
               hover:text-blue-600 transition-all duration-500 hover:scale-105
             "
           >
-            +20-120-8261-096
+            +966-510-961-728
           </a>
 
           <button

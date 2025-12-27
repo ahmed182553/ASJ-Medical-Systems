@@ -18,8 +18,8 @@ export default function ContactInfo() {
             <div className="space-y-5">
                 <div className="flex items-center gap-4">
                     <FaPhoneAlt className="text-blue-700 text-xl" />
-                    <a href="tel:+201208261096" className="hover:text-blue-600">
-                        +20-120-8261-096
+                    <a href="tel:+966510961728" className="hover:text-blue-600">
+                        +966-510-961-728
                     </a>
                 </div>
 
@@ -33,13 +33,14 @@ export default function ContactInfo() {
                 <div className="flex items-center gap-4">
                     <FaWhatsapp className="text-green-600 text-2xl" />
                     <a
-                        href="https://wa.me/201095598066?text=Hello%20I%20want%20to%20contact%20your%20company"
+                        href="https://wa.me/966510961728?text=Hello%2C%20I%20am%20interested%20in%20your%20services"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-green-600"
                     >
-                        WhatsApp Chat
+                        Chat on WhatsApp
                     </a>
+
                 </div>
 
                 <div className="flex items-center gap-4">

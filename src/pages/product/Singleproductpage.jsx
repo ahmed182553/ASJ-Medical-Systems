@@ -9,7 +9,7 @@ import RelatedProducts from "./RelatedProducts";
 import { motion } from "framer-motion";
 
 export default function Singleproductpage() {
-    const { id } = useParams(); // route param (could be slug or id)
+    const { id } = useParams();
     const navigate = useNavigate();
     const product = products.find((p) => String(p.id) === String(id) || String(p.slug) === String(id));
     if (!product) {

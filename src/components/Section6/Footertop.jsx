@@ -53,8 +53,8 @@ export default function Footertop() {
 
                 <div className="flex items-center gap-3 mb-4 max-md:justify-center">
                     <FaPhone className="text-blue-500 text-xl" />
-                    <a href="tel:+201208261096" className="hover:text-blue-600">
-                        +20-120-8261-096
+                    <a href="tel:+966510961728" className="hover:text-blue-600">
+                        +966-510-961-728
                     </a>
                 </div>
             </motion.div>
